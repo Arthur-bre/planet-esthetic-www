@@ -1,0 +1,33 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% block title %}{{ product.name }} | {{ parent() }}{% endblock %}
+
+{% block content %}
+    {% include '@SyliusShop/Product/Show/_breadcrumb.html.twig' %}
+
+    <div class="row">
+        <div class="col-12 col-md-6 mb-5">
+            <div class="pr-3">
+                {{ sylius_template_event('sylius.shop.product.show.left_sidebar', _context) }}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-5">
+{#            Si le user est connecté #}
+            {% if is_granted('ROLE_USER') %}
+                    {{ sylius_template_event('sylius.shop.product.show.right_sidebar', _context) }}
+            {% else %}
+{#                {{ sylius_template_event('sylius.shop.product.show.right_sidebar', _context) }}#}
+                <h1 id="sylius-product-name" {{ sylius_test_html_attribute('product-name', product.name) }}>
+                    {{ product.name }}
+                </h1>
+                <div class="bloc-login">
+                    <div class="ui right stackable inverted menu">
+                        <a href="{{ path('sylius_shop_login') }}" class="item">SE CONNECTER / <br>CRÉER UN COMPTE</a>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+         {{ sylius_template_event('sylius.shop.product.show.content', _context) }}
+
+{% endblock %}

@@ -1,0 +1,70 @@
+sylius_paypal_webhook:
+    resource: "@SyliusPayPalPlugin/Resources/config/webhook_routing.yaml"
+odiseo_sylius_blog_plugin_admin:
+    resource: "@OdiseoSyliusBlogPlugin/Resources/config/routing/admin.yaml"
+    prefix: /admin/blog
+
+odiseo_sylius_blog_plugin_shop:
+    resource: "@OdiseoSyliusBlogPlugin/Resources/config/routing/shop.yaml"
+    prefix: /{_locale}/blog
+    requirements:
+        _locale: ^[A-Za-z]{2,4}(_([A-Za-z]{4}|[0-9]{3}))?(_([A-Za-z]{2}|[0-9]{3}))?$
+        
+odiseo_sylius_banner_plugin_admin:
+    resource: "@OdiseoSyliusBannerPlugin/Resources/config/routing/admin.yaml"
+    prefix: /admin
+
+odiseo_sylius_banner_plugin_shop:
+    resource: "routes/shop.yaml"
+    prefix: /{_locale}/banners
+    requirements:
+        _locale: ^[A-Za-z]{2,4}(_([A-Za-z]{4}|[0-9]{3}))?(_([A-Za-z]{2}|[0-9]{3}))?$        
+    
+app_about_us:
+    path:
+        fr_FR: '/{_locale}/qui-sommes-nous'
+    controller: 'Symfony\Bundle\FrameworkBundle\Controller\TemplateController'
+    methods: [GET]
+    defaults:
+        template: 'static/about_us.html.twig'
+        
+app_showroom:
+    path:
+        fr_FR: '/{_locale}/showroom'
+    controller: 'Symfony\Bundle\FrameworkBundle\Controller\TemplateController'
+    methods: [GET]
+    defaults:
+        template: 'static/showroom.html.twig'
+            
+app_services:
+    path:
+        fr_FR: '/{_locale}/services'
+    controller: 'Symfony\Bundle\FrameworkBundle\Controller\TemplateController'
+    methods: [GET]
+    defaults:
+        template: 'static/services.html.twig'
+            
+app_brands:
+    path:
+        fr_FR: '/{_locale}/marques'
+    controller: 'Symfony\Bundle\FrameworkBundle\Controller\TemplateController'
+    methods: [GET]
+    defaults:
+        template: 'static/brands.html.twig'
+            
+app_cgu:
+    path:
+        fr_FR: '/{_locale}/cgu'
+    controller: 'Symfony\Bundle\FrameworkBundle\Controller\TemplateController'
+    methods: [GET]
+    defaults:
+        template: 'static/cgu.html.twig'   
+            
+            
+app_localisation:
+    path:
+        fr_FR: '/{_locale}/localisation'
+    controller: 'Symfony\Bundle\FrameworkBundle\Controller\TemplateController'
+    methods: [GET]
+    defaults:
+        template: 'static/localisation.html.twig'

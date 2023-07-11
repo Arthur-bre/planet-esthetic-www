@@ -1,0 +1,112 @@
+.ui{
+    &.button{
+        &:hover{
+            background: rgba(41, 208, 214, 0.1725490196) !important;
+            color: #29d0d6 !important;
+            border-color: rgba(41, 208, 214, 0.2705882353) !important;
+        }
+        &.primary{
+            background: linear-gradient(to bottom, #29d0d6 0%,#0fa7ad 100%) !important;
+            color:white !important;
+
+            &:hover{
+                color:white !important;
+                background: linear-gradient(to bottom, #0fa7ad 0%,#29d0d6 100%) !important;
+            }
+        }
+        &.purple{
+            background: #7c5987 !important;
+            border-color: #7c5987 !important;
+            color:white !important;
+
+
+            &:hover{
+                background: #AAC456 !important;
+                border-color: #92AB45;
+            }
+        }
+        &.green{
+            background: linear-gradient(to bottom, #b0ca5a 0%,#92aa44 100%) !important;
+            border-color: #b0ca5a !important;
+            color:white !important;
+
+            &:hover{
+                background: linear-gradient(to bottom, #92aa44 0%,#b0ca5a 100%) !important;
+                border-color: #92aa44 !important;
+                text-decoration: none !important;
+                color:white !important;
+            }
+        }
+        &.blue{
+            background: linear-gradient(to bottom, #29d0d6 0%,#0fa7ad 100%) !important;
+            border-color: #29d0d6 !important;
+            color:white !important;
+            &:hover{
+                background: linear-gradient(to bottom, #0fa7ad 0%,#29d0d6 100%) !important;
+                border-color: #0fa7ad !important;
+                text-decoration: none !important;
+            }
+        }
+        &.white{
+            color:white !important;
+            &:hover{
+                background-color: white !important;
+                color:black !important;
+                border-color: white !important;
+            }
+        }
+    }
+    &.labeled{
+        &.button, &.icon.button{
+            &.primary{
+                &.button{
+                    background: linear-gradient(to bottom, #29d0d6 0%,#0fa7ad 100%) !important;
+                    &:hover{
+                        color:white !important;
+                        background: linear-gradient(to bottom, #0fa7ad 0%,#29d0d6 100%) !important;
+                    }
+                }
+            }
+            &.purple
+            {
+                &.button{
+                    background: #7c5987 !important;
+                    color:white !important;
+                    &:hover{
+                        background: #AAC456 !important;
+                        border-color: #92AB45;
+                    }
+                }
+
+            }
+            > .icon{
+                border:none;
+            }
+        }
+    }
+    &.toggle{
+        &.checkbox{
+            input:checked~label:before,
+            input:focus:checked~label:before{
+                background-color: #7c5987 !important;
+            }
+        }
+    }
+
+    &.star{
+        &.rating{
+            .active{
+                &.icon{
+                    color: #29d0d6 !important;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

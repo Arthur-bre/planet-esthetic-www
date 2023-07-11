@@ -1,0 +1,166 @@
+html{
+    font-family: 'Raleway', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif !important;
+}
+p,span{
+    font-family: 'Raleway', sans-serif !important;
+}
+img{
+    max-width: 100%;
+}
+.ui.inverted.vertical.footer.segment {
+   background: #49331c !important;
+}
+.ui.attached:not(.message) + .ui.attached.segment:not(.top) {
+    border-top: 1px solid #D4D4D5 !important;
+}
+a{
+    text-decoration: none;
+    color: #29d0d6 !important;
+    &:hover{
+        color: #0fa7ad !important;
+    }
+}
+.ui.attached.tabular.menu{
+    a{
+        color: #fe986b !important;
+        &:hover{
+            color: #fe986b !important;
+        }
+    }
+}
+
+.white{
+    color:white!important;
+}
+.bloc-login{
+   height:100%;
+        .menu{
+            height:100%;
+            background: transparent !important;
+            flex-direction: column !important;
+            align-items: baseline;
+            .item{
+                background: linear-gradient(to bottom, #29d0d6 0%,#0fa7ad 100%) !important;
+                color: #fff !important;
+                font-size: 1.5rem !important;
+                //max-width: 12rem;
+                border-radius:0.3rem !important;
+                margin-bottom:auto !important;
+                &:hover{
+                    color: #fff !important;
+                }
+            }
+        }
+
+}
+
+#sylius-product-name{
+    color: #9f8c7b;
+    font-size: 40px;
+    padding: 0;
+    font-weight: 200;
+}
+.sylius-product-name{
+    color: #9f8c7b !important;
+}
+section#news-bloc{
+    background-repeat: no-repeat;
+    background-size: cover;
+    .articles{
+        .article-item{
+            border: 1px solid #e3dad5;
+            padding:1rem;
+            background-color: white;
+            width:33.33%;
+            @include media-breakpoint-down(md){
+                width:100%;
+            }
+            .article-image-container{
+                height:300px;
+                .article-image{
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+            }
+            .article-content{
+                h2{
+                    color: #a59484;
+                    text-transform: uppercase;
+                }
+                .article-description{
+                    margin:1rem 0;
+                    text-align: center;
+                }
+                .btn{
+
+                }
+            }
+        }
+    }
+}
+section.about-us,
+section.services,
+section.cgu,
+section.brands,
+section.localisation{
+    .page-heading{
+        font: 600 18px/22px "Open Sans", sans-serif;
+        color: #555454;
+        text-transform: uppercase;
+        padding: 0px 0px 17px 0px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #d6d4d4;
+        overflow: hidden;
+    }
+    h2{
+        color: #9877a8;
+        font-size: 27px;
+        margin-top: 18px;
+        margin-bottom: 9px;
+        font-weight:500;
+    }
+    h3{
+        font-size: 16px;
+        border-bottom: none;
+        margin: 0;
+        color: #f57f4b;
+        padding: 15px 0 3px 0;
+    }
+    h4{
+        margin: 0;
+        color: #92aa44;
+        font-size: 17px;
+    }
+    p{
+        line-height: 18px;
+        margin: 0 0 9px;
+    }
+
+    .bloc-brand{
+        display:flex;
+        img{
+            object-fit: contain;
+        }
+        >div{
+            margin-left:1rem;
+        }
+    }
+    .map{
+        margin-left:25%;
+        @include media-breakpoint-down(xl){
+            margin-left:0;
+        }
+        .embed-responsive{
+            iframe{
+                max-width:100%;
+            }
+        }
+    }
+}
+
+

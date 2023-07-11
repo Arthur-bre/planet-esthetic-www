@@ -1,0 +1,20 @@
+#webpack_encore:
+#    output_path: '%kernel.project_dir%/public/build/default'
+#    builds:
+#        admin: '%kernel.project_dir%/public/build/admin'
+#        shop: '%kernel.project_dir%/public/build/shop'
+#        app.admin: '%kernel.project_dir%/public/build/app/admin'
+#        app.shop: '%kernel.project_dir%/public/build/app/shop'
+webpack_encore:
+    # The path where Encore is building the assets - i.e. Encore.setOutputPath()
+    #output_path: '%kernel.project_dir%/public/build'
+    # If multiple builds are defined (as shown below), you can disable the default build:
+    output_path: false
+      
+
+    builds:
+        planetEsthetic: '%kernel.project_dir%/public/planet-esthetic-theme'
+        bootstrapTheme: '%kernel.project_dir%/public/bootstrap-theme'
+#        app.admin: '%kernel.project_dir%/public/build/app/admin'
+#        app.shop: '%kernel.project_dir%/public/planet-esthetic-theme'
+        # ^^ correspond a myTheme de {{ encore_entry_link_tags('app', null, 'myTheme') }}

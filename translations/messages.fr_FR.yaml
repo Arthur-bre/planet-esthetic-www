@@ -1,0 +1,24 @@
+sylius.ui.latest_products: 'Notre sélection de nouveautés'
+
+
+sylius.ui.call_us: '02 40 26 38 80'
+sylius.ui.about: 'Qui sommes-nous ?'
+sylius.ui.localisation: 'Nous situer'
+sylius.ui.showroom: 'Showroom'
+sylius.ui.services: 'Nos services'
+sylius.ui.brand: 'Nos marques'
+sylius.ui.cgu: 'Conditions générales de vente'
+sylius.ui.informations: 'Informations'
+sylius.ui.account: 'Votre compte'
+sylius.ui.personnal_informations: 'Informations personnelles'
+sylius.ui.historique: 'Historique des commandes'
+sylius.ui.delivery: 'Livraison'
+
+sylius.shop.product.show_price: 'Afin de consulter les prix, veuillez vous connecter ou créer un compte.'
+
+app.ui.on_the_news: 'Actualités & évènements'
+app.ui.read_more: 'Lire la suite'
+
+sylius.contact.subject.sav: 'SAV'
+sylius.contact.subject.service_client: 'Service client'
+sylius.ui.file: 'Fichier'

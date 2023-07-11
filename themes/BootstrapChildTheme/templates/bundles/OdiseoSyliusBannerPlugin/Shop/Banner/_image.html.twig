@@ -1,0 +1,19 @@
+<div class="image-container">
+    {% if banner.url is not null %}
+            <img class="ui image hide-on-mobile" src="{{ banner.imageName|imagine_filter('odiseo_sylius_banner_plugin_image') }}" alt="{{ banner.imageName }}">
+            <img class="ui image show-on-mobile" src="{{ banner.mobileImageName|imagine_filter('odiseo_sylius_banner_plugin_mobile_image') }}" alt="{{ banner.mobileImageName }}">
+               <div class="text-container">
+                   <div class="main-text">{{ banner.mainText }}</div>
+                   <div class="secondary-text">{{ banner.secondaryText }}</div>
+                   <a href="{{ banner.url }}" class="button-text">{{ banner.buttonText }}</a>
+               </div>
+
+    {% else %}
+        <img class="ui image hide-on-mobile" src="{{ banner.imageName|imagine_filter('odiseo_sylius_banner_plugin_image') }}" alt="{{ banner.imageName }}">
+        <img class="ui image show-on-mobile" src="{{ banner.mobileImageName|imagine_filter('odiseo_sylius_banner_plugin_mobile_image') }}" alt="{{ banner.mobileImageName }}">
+       <div class="text-container">
+           <div class="main-text">{{ banner.mainText }}</div>
+           <div class="secondary-text">{{ banner.secondaryText }}</div>
+       </div>
+    {% endif %}
+</div>

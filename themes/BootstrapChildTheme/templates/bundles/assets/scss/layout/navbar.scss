@@ -1,0 +1,15 @@
+.navbar{
+    &.bg-brown{
+        background-color: $brown !important;
+    }
+    .menu{
+        background-color: transparent !important;
+        .item{
+            color: #fff !important;
+            &:hover{
+                background-color: #9877a8 !important;
+                color: #fff !important;
+            }
+        }
+    }
+}

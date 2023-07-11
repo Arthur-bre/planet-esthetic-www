@@ -1,0 +1,14 @@
+{
+  "name": "sylius/planet-esthetic",
+  "authors": [
+    {
+      "name": "Sylius",
+      "email": "contact@sylius.com"
+    }
+  ],
+  "extra": {
+    "sylius-theme": {
+      "title": "Planet Esthetic"
+    }
+  }
+}

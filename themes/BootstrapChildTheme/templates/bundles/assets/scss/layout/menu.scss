@@ -1,0 +1,39 @@
+#mainMenu{
+    &.menu{
+        border-top: 1px solid #eeeeee !important;
+        justify-content: center;
+        .item{
+            color: #000 !important;
+            border-radius: 0;
+            &:hover{
+                @include menu-hover-active;
+            }
+
+        }
+        .dropdown{
+            &.item, .item{
+                &:hover{
+                    @include menu-hover-active;
+                }
+            }
+            &.active{
+                @include menu-hover-active;
+                &:hover{
+                    @include menu-hover-active;
+                }
+                .text{
+                    @include menu-hover-active;
+                }
+                .menu{
+                    @include menu-hover-active;
+                    .item{
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+

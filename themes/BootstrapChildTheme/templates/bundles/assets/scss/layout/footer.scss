@@ -1,0 +1,31 @@
+#footer{
+    margin-top:10rem!important;
+    &.mtop-0{
+        margin-top:0!important;
+    }
+    .column{
+        padding-left:2rem;
+        padding-right:2rem;
+        h4{
+            font-size: 26px;
+        }
+    }
+    .tel{
+        align-self: center;
+        font-size: 2rem;
+        color: #d0c4bd;
+        margin-left: auto;
+        @include media-breakpoint-down(lg){
+            margin:auto;
+        }
+    }
+    .list{
+        a{
+            color: #fff !important;
+            &:hover{
+                color: #fff !important;
+                text-decoration: underline !important;
+            }
+        }
+    }
+}

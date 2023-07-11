@@ -1,0 +1,12 @@
+{
+  "entrypoints": {
+    "app": {
+      "css": [
+        "/planet-esthetic-theme/app.css"
+      ],
+      "js": [
+        "/planet-esthetic-theme/app.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% block content %}
+    <div class="homepage">
+        {{ sylius_template_event('sylius.shop.homepage') }}
+
+    </div>
+{% endblock %}
+{% block secondary %}
+    {%- include '@SyliusShop/Homepage/_news.html.twig' -%}
+{% endblock %}
+

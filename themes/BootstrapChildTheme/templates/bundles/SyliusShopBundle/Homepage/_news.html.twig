@@ -1,0 +1,13 @@
+{% import '@SyliusShop/Common/Macro/sectionHeaders.html.twig' as headers %}
+<section id="news-bloc" class="bg-white scratched-before  py-5 mt-5" style="background-image: url({{ asset('bootstrap-theme/images/bg-news.jpg', 'bootstrapTheme') }})">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="ui center aligned huge header white">{{ 'app.ui.on_the_news'|trans }}</h2>
+        </div>
+        {{ render(url('odiseo_sylius_blog_plugin_shop_partial_article_index_latest', {'count': 3, 'template': '@SyliusShop/Homepage/_articles.html.twig'})) }}
+
+        <div class="text-center">
+            <a href="{{ path('odiseo_sylius_blog_plugin_shop_article_index') }}" class="ui button white text-uppercase">Voir toute l'actualité planet'esthetic</a>
+        </div>
+    </div>
+</section>

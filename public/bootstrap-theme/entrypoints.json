@@ -1,0 +1,12 @@
+{
+  "entrypoints": {
+    "app": {
+      "css": [
+        "/bootstrap-theme/app.css"
+      ],
+      "js": [
+        "/bootstrap-theme/app.js"
+      ]
+    }
+  }
+}
